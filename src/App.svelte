@@ -4,6 +4,7 @@
   import { onMount } from 'svelte';
   import Battery from './Battery.svelte';
     import BagItems from './BagItems.svelte';
+    import BagScreen from './BagScreen.svelte';
 
   //let batteryLevel = 100; // Start at 100%
   //let batteryIcon = "fas fa-battery-full"; // Default icon
@@ -93,7 +94,7 @@
   </select>
   <div class="container">
     <div class="bag-screen">
-   
+        <BagScreen />
     </div>
  <BagItems></BagItems>
     
@@ -241,19 +242,6 @@
     width: 100%; /* Automatically fits within the bag-container */
     height: auto;
   
-  }
-
-  .bag-screen {
-    width: 500px;
-    height: 50px;
-    border: 10px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    margin-left:20px;
-    margin-top:50px;
   }
 
   .phone {
